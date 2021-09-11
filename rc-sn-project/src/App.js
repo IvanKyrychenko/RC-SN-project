@@ -1,17 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import Header from './Header.js';
+import Technologies from './Technologies.js';
 
-function App() {
+const App = () => {
   return (
     <div>
-     <p>Hello World!</p>
-     <ul>
-       <li>First</li> 
-       <li>Second</li>
-       <li>Third</li> 
-     </ul>
+      <Header />
+      <Technologies />
     </div>
   );
 }
+
 
 export default App;
