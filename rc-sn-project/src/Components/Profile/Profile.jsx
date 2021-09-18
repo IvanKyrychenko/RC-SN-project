@@ -1,3 +1,4 @@
+import MyPosts from './MyPosts/MyPosts';
 import s from './Profile.module.scss'
 
 const Profile = () => {
@@ -6,12 +7,7 @@ const Profile = () => {
     <div>
       <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYtfZRhbGQtq2BapB2MXJfWIO2QriO5Wx3qQ&usqp=CAU' />
     </div>
-    <div>My Posts
-      <div>New post
-        <div>post1</div>
-        <div>post2</div>
-      </div>
-    </div>
+    <MyPosts />
   </div>);
 }
 
