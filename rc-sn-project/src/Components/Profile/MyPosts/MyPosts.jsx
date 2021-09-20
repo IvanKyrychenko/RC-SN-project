@@ -8,13 +8,10 @@ const MyPosts = () => {
                 <textarea></textarea>
                 <button>Add Post</button>
             </div>
-            <Post />
-            <Post />
-            <Post />
-            <Post />
-            <Post />
+            <Post message="Hi! How are u?" likeCount='15'/>
+            <Post message="It's my first post" likeCount='20' />
         </div>
     </div>)
 }
 
-export default MyPosts;
+export default MyPosts; 
