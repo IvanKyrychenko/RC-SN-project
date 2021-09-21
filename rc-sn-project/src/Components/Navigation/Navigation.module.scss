@@ -1,9 +1,16 @@
 .nav {
     background-color: burlywood;
     grid-area: n;
+    padding: 20px;
 }
 
 .item {
-    color: white;
-}
+    a {
+        color: white;
+        text-decoration: none;
+    }
 
+    & :hover {
+        color: gold;
+    }
+}
