@@ -22,7 +22,7 @@ const MessageItem = (props) => {
 
 const Dialogs = (props) => {
 
-    let dialogsData = [
+    let dialogs = [
         { id: 1, name: 'Dimych' },
         { id: 2, name: 'Andrey' },
         { id: 3, name: 'Sveta' },
@@ -31,16 +31,7 @@ const Dialogs = (props) => {
         { id: 6, name: 'Valera' },
     ];
 
-    let dialogElements = [
-        <DialogItem name={dialogsData[0].name} id={dialogsData[0].id} />,
-        <DialogItem name={dialogsData[1].name} id={dialogsData[1].id} />,
-        <DialogItem name={dialogsData[2].name} id={dialogsData[2].id} />,
-        <DialogItem name={dialogsData[3].name} id={dialogsData[3].id} />,
-        <DialogItem name={dialogsData[4].name} id={dialogsData[4].id} />,
-        <DialogItem name={dialogsData[5].name} id={dialogsData[5].id} />
-    ];
-
-    let messagesData = [
+    let messages = [
         { id: 1, message: 'Hi!' },
         { id: 2, message: 'How r u?' },
         { id: 3, message: 'Sup, dude?' },
@@ -49,26 +40,24 @@ const Dialogs = (props) => {
         { id: 6, message: 'Ola!' },
     ];
 
+    let dialogElements = dialogs
+        .map(d => <DialogItem name={d.name} id={d.id} />
+        );
+
+    let messagesElements = messages
+        .map(m => <MessageItem message={m.message} id={m.id} />
+        );
+
     return (
         <div className={s.dialogs}>
             <div className={s.dialogsItems}>
-
-
-                { dialogElements }
-
-
+                {dialogElements}
             </div>
             <div className={s.messages}>
-                <MessageItem message={messagesData[0].message} id={messagesData[0].id} />
-                <MessageItem message={messagesData[1].message} id={messagesData[1].id} />
-                <MessageItem message={messagesData[2].message} id={messagesData[2].id} />
-                <MessageItem message={messagesData[3].message} id={messagesData[3].id} />
-                <MessageItem message={messagesData[4].message} id={messagesData[4].id} />
-                <MessageItem message={messagesData[5].message} id={messagesData[5].id} />
+                {messagesElements}
             </div>
         </div>
     )
 }
 
 export default Dialogs;
-
