@@ -1,4 +1,4 @@
-import s from './Music.module.scss';
+import './Music.scss';
 
 const Music = () => {
     return (

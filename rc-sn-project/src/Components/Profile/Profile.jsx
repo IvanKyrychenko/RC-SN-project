@@ -1,5 +1,5 @@
 import MyPosts from './MyPosts/MyPosts';
-import s from './Profile.module.scss'
+import './Profile.scss'
 import ProfileInfo from './ProfileInfo/ProfileInfo';
 
 const Profile = () => {

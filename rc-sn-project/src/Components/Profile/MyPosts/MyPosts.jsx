@@ -1,4 +1,4 @@
-import s from './MyPosts.module.scss'
+import './MyPosts.scss';
 import Post from './Post/Post';
 
 const MyPosts = () => {
@@ -15,7 +15,7 @@ const MyPosts = () => {
         );
 
     return (<div>
-        <div className={s.postsBlock}><h3>My Posts</h3>
+        <div className='postsBlock'><h3>My Posts</h3>
             <div>
                 <div>
                     <textarea></textarea>
@@ -24,7 +24,7 @@ const MyPosts = () => {
                     <button>Add Post</button>
                 </div>
             </div>
-            <div className={s.posts}>
+            <div className='posts'>
                 {postsElement}
             </div>
         </div>

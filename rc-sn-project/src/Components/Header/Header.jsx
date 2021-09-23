@@ -1,7 +1,7 @@
-import s from './Header.module.scss'
+import './Header.scss'
 
 const Header = () => {
-  return (<header className={s.header}>
+  return (<header className='header'>
     <img src='https://www.logodesign.net/logo/abstract-cuboid-building-4519ld.png' />
   </header>
   );
