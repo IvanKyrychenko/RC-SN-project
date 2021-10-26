@@ -1,4 +1,4 @@
-import MyPosts from './MyPosts/MyPosts';
+import MyPostsContainer from './MyPosts/MyPostsContainer';
 import './Profile.scss'
 import ProfileInfo from './ProfileInfo/ProfileInfo';
 
@@ -7,7 +7,7 @@ const Profile = (props) => {
   return (
     <div>
       <ProfileInfo />
-      <MyPosts posts={props.state.posts}/>
+      <MyPostsContainer store={store}  />
     </div>);
 }
 
